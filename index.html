@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3><b>Basic Calculator by  Muhammad Tukur Abdulhamid.<br>
+        Student ID: CLA0011471UE <br>
+       Github repo:-link https://muhammadtukurabdulhamid.github.io/Calculator_Project/
+    </b></h3>
+    <div class="calculator">
+        <input type="text" id="output" readonly>
+        <table>
+            <tr>
+                <td><button onclick="clearOutput()"> <b> AC</b></button></td>
+                <td colspan="1"><button onclick="appendToOutput('(')">(</button></td>
+                <td colspan="1"><button onclick="appendToOutput(')')">)</button></td>
+                <td colspan="1"><button oneclick="appendOperator">%</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendToOutput('7')">7</button></td>
+                <td><button onclick="appendToOutput('8')">8</button></td>
+                <td><button onclick="appendToOutput('9')">9</button></td>
+                <td><button onclick="appendOperator('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendToOutput('4')">4</button></td>
+                <td><button onclick="appendToOutput('5')">5</button></td>
+                <td><button onclick="appendToOutput('6')">6</button></td>
+                <td><button onclick="appendOperator('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendToOutput('1')">1</button></td>
+                <td><button onclick="appendToOutput('2')">2</button></td>
+                <td><button onclick="appendToOutput('3')">3</button></td>
+                <td><button onclick="appendOperator('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendToOutput('0')">0</button></td>
+                <td><button onclick="appendToOutput('.')"><b> . </b></button></td>
+                
+                <td><button onclick="appendOperator('/')">/</button></td>
+                <td><button onclick="calculate()"> <b>= </b>  </button></td>
+            </tr>
+            <tr>
+                
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
